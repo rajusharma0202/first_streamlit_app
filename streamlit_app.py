@@ -53,7 +53,7 @@ streamlit.stop()
 
 streamlit.header("The fruitload list contains")
 #snowflake related functions
-def get_fruit_load_list();
+def get_fruit_load_list():
   with my_cnx_cursor() as mu_curr:
     my_curr.execute("select * from fruit_load_list")
       return my_curr.fetchall()
