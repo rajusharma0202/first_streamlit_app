@@ -64,8 +64,7 @@ def insert_row_snowflake(new_fruit):
       return ("Thanks for adding "+ new_fruit)
  
 streamlit.text_input('What fruit would you like add?')
-insert_val = insert_row_snowflake()
-streamlit.dataframe("Data inserted "+ insert_val)
+my_cur.execute("insert_row_snowflake()")
 
 #add_my_fruit = streamlit.text_input('What fruit would you like add?','jackfruit')
 #streamlit.write('Thanks for adding ', add_my_fruit)
